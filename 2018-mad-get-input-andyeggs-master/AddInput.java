@@ -18,14 +18,14 @@ public class AddInput {
         // These two lines will get you the first two arguments 
         try {
           if (args.length != 2) {
-            System.out.println("Incorrect number of arguments!");
+            System.out.println("Invalid Input");
             System.exit(0);
           }
           a = Integer.parseInt(args[0]);
           b = Integer.parseInt(args[1]);
           sum = a+b;
         } catch(NumberFormatException ex) {
-            System.out.println("Arguments must be integers!");
+            System.out.println("Invalid Input");
             System.exit(0);
         }
         // Print out "The sum of _ and _ is _" where you actually print the numbers they enter and the sum
